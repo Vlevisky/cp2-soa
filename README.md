@@ -28,4 +28,15 @@ A API roda em `http://localhost:8085`.
 - `PUT /pedidos/{id}`
 - `DELETE /pedidos/{id}`
 
-Os exemplos para testar as requisições estão no arquivo `requests.http`.
+## Testando a API
+
+Os exemplos das requisições estão no arquivo `requests.http`. Para testar, basta abrir o arquivo e executar a rota desejada.
+
+Exemplo de cadastro:
+
+```json
+{
+  "clienteNome": "Ana Souza",
+  "valorTotal": 149.90
+}
+```
