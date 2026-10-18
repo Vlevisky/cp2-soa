@@ -1,0 +1,28 @@
+@baseUrl = http://localhost:8085
+
+### Criar um pedido
+POST {{baseUrl}}/pedidos
+Content-Type: application/json
+
+{
+  "clienteNome": "Ana Souza",
+  "valorTotal": 149.90
+}
+
+### Listar todos os pedidos
+GET {{baseUrl}}/pedidos
+
+### Buscar um pedido pelo ID
+GET {{baseUrl}}/pedidos/1
+
+### Atualizar um pedido
+PUT {{baseUrl}}/pedidos/1
+Content-Type: application/json
+
+{
+  "clienteNome": "Ana Souza Atualizada",
+  "valorTotal": 199.90
+}
+
+### Excluir um pedido
+DELETE {{baseUrl}}/pedidos/1
